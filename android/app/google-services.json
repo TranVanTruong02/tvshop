@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "180358175273",
+    "project_id": "tvshop-724ef",
+    "storage_bucket": "tvshop-724ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180358175273:android:81d741e8c194f58d2e9a38",
+        "android_client_info": {
+          "package_name": "com.example.tvshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyxgPSAYR6ABYJVk_YJeRq0iuVVKgO7pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

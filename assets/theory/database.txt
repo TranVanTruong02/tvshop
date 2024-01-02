@@ -1,0 +1,11 @@
+# Cloud Firestore 
+    => là một dịch vụ cơ sở dữ liệu NoSQL do Firebase cung cấp. Nó được thiết kế để lưu trữ và đồng bộ dữ liệu của ứng dụng trên nhiều nền tảng, bao gồm cả ứng dụng di động, web và máy chủ.
+
+    Cloud Firestore sử dụng kiểu dữ liệu tài liệu (document-oriented data model) và lưu trữ dữ liệu dưới dạng các tài liệu (documents) được tổ chức trong các bộ sưu tập (collections). 
+    Mỗi tài liệu là một bản ghi dữ liệu JSON-like, được lưu trữ dưới dạng cặp khóa-giá trị, cho phép truy xuất dữ liệu dễ dàng.
+
+    # Một số đặc điểm và lợi ích của Cloud Firestore bao gồm:
+    => Đồng bộ dữ liệu trực tiếp: Cloud Firestore tự động đồng bộ dữ liệu giữa các thiết bị và nền tảng khác nhau, cho phép người dùng truy cập và cập nhật dữ liệu một cách thời gian thực.
+    => Tích hợp sẵn với các dịch vụ Firebase: Cloud Firestore tích hợp một cách chặt chẽ với các dịch vụ khác của Firebase như Firebase Authentication, Firebase Cloud Functions, Firebase Hosting và nhiều dịch vụ khác.
+    => Quyền truy cập linh hoạt: Cloud Firestore cho phép bạn xác định quyền truy cập dữ liệu chi tiết cho người dùng và nhóm người dùng, giúp bảo vệ dữ liệu của ứng dụng.
+    => Truy vấn mạnh mẽ: Cloud Firestore cung cấp các tính năng truy vấn linh hoạt, cho phép bạn truy xuất dữ liệu dựa trên các tiêu chí nhất định, sắp xếp kết quả và thực hiện các truy vấn phức tạp.

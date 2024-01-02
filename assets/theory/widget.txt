@@ -1,0 +1,149 @@
+# Cài đặt firebase
+    firebase_core, firebase_auth, firebase_storage, cloud_firestore
+
+# Khởi tạo thành phần mới (stf - StatefulWidget)
+    Trong Flutter, stf là một từ viết tắt cho "StatefulWidget".
+    StatefulWidget là một loại widget trong Flutter mà có thể thay đổi trạng thái của nó trong quá trình chạy. Điều này cho phép widget tương tác với người dùng và cập nhật giao diện dựa trên sự thay đổi trong trạng thái.
+    Khi sử dụng stf trong Flutter, bạn thường tạo một lớp widget mới kế thừa từ StatefulWidget. Lớp này được sử dụng để khởi tạo một đối tượng State tương ứng, và State này sẽ giữ trạng thái của widget và quản lý việc cập nhật giao diện.
+# widget
+    Trên cơ sở hướng đối tượng, Flutter quan niệm mọi thứ là một widget, bao gồm cả văn bản, hình ảnh, nút bấm, biểu đồ, danh sách và thậm chí cả màn hình. Mỗi widget trong Flutter đều là một đối tượng và có các thuộc tính riêng để tùy chỉnh hành vi và giao diện của nó.
+    Có hai loại widget chính trong Flutter là StatelessWidget và StatefulWidget:
+    StatelessWidget: Là một widget không thay đổi trạng thái sau khi được tạo và không ghi nhớ thông tin trạng thái. Widget này thường được sử dụng cho các thành phần giao diện người dùng tĩnh và không tương tác với người dùng.
+    StatefulWidget: Là một widget có thể thay đổi trạng thái trong quá trình chạy. Widget này chứa một đối tượng State tương ứng và có khả năng cập nhật giao diện dựa trên sự thay đổi trong trạng thái.
+
+
+# widget phổ biến 
+    Center: Đây là một widget để căn giữa nội dung của nó theo chiều ngang và dọc.
+    Column: Đây là một widget để xếp các widget con theo chiều dọc, từ trên xuống dưới.
+    Align: Đây là một widget để căn chỉnh một widget con theo vị trí xác định trên màn hình. Trong đoạn mã, Align được sử dụng để căn chỉnh hình ảnh (Image.asset) ở góc trên bên trái của màn hình.
+    Image.asset: Đây là một widget để hiển thị hình ảnh từ tài nguyên trong dự án. Trong đoạn mã, Image.asset được sử dụng để hiển thị hình ảnh với đường dẫn icSplashBg và có chiều rộng là 300.
+    Text: Đây là một widget để hiển thị văn bản. Trong đo   ạn mã, Text được sử dụng để hiển thị tên ứng dụng (appname) và phiên bản ứng dụng (appversion).
+    Spacer: Đây là một widget để tạo ra một khoảng trống linh hoạt giữa các widget.
+    EdgeInsets trong Flutter là một lớp đại diện cho các khoảng cách (padding và margin) giữa các phần tử trong giao diện người dùng.
+    Các EdgeInsets bao gồm bốn giá trị: top (trên), left (trái), bottom (dưới) và right (phải), đại diện cho khoảng cách tương ứng với các hướng này. 
+    EdgeInsets cũng cung cấp các phương thức hữu ích như EdgeInsets.all, EdgeInsets.symmetric và EdgeInsets.fromLTRB để tạo ra các EdgeInsets với giá trị đồng đều hoặc tùy chỉnh.
+
+
+# BoxDecoration: 
+    => là một lớp trong Flutter được sử dụng để định dạng và trang trí hộp chứa (container) của một widget, chẳng hạn như Container, DecoratedBox, hoặc các widget khác có thuộc tính decoration.
+    => Thuộc tính:
+                color: Màu nền của hộp chứa.
+                image: Hình ảnh nền của hộp chứa.
+                border: Đường viền của hộp chứa.    
+                borderRadius: Góc bo của hộp chứa.
+                gradient: Gradient màu sắc cho nền của hộp chứa.
+                boxShadow: Đổ bóng cho hộp chứa.
+                backgroundBlendMode: Chế độ hỗn hợp màu sắc giữa hình ảnh nền và màu nền.
+
+# GestureDetector: Nó cung cấp một cách thuận tiện để bao bọc các Widget khác và gắn các hàm xử lý sự kiện tương ứng với các tương tác người dùng.
+    => Dưới đây là một số tác dụng quan trọng của GestureDetector:
+        Bắt sự kiện onTap: GestureDetector cho phép bạn bắt sự kiện khi người dùng nhấp vào Widget bên trong nó.
+        Bắt sự kiện onDoubleTap: GestureDetector cũng hỗ trợ bắt sự kiện khi người dùng nhấp đúp vào Widget thông qua thuộc tính onDoubleTap.
+        Bắt sự kiện onLongPress: GestureDetector cho phép bạn bắt sự kiện khi người dùng nhấn và giữ Widget trong một khoảng thời gian dài thông qua thuộc tính onLongPress. 
+        Bắt sự kiện vuốt và kéo: GestureDetector cung cấp các thuộc tính như onPanStart, onPanUpdate và onPanEnd để bắt và xử lý các sự kiện vuốt và kéo. 
+        Bắt sự kiện các tương tác khác: GestureDetector cung cấp nhiều thuộc tính khác như onScaleStart, onScaleUpdate, onScaleEnd, onVerticalDragStart, onVerticalDragUpdate, onVerticalDragEnd, và nhiều thuộc tính khác để bắt và xử lý các tương tác người dùng khác nhau.
+
+# Trong Flutter, StatelessWidget và StatefulWidget là hai lớp cơ bản để xây dựng giao diện người dùng. Sự khác biệt chính giữa hai lớp này là:
+    => StatelessWidget: Là một lớp không thay đổi, tức là một khi được xây dựng và hiển thị lên màn hình, nó không thể thay đổi trạng thái. 
+       Điều này có nghĩa rằng nếu bạn cần cập nhật giao diện người dùng trong StatelessWidget, bạn phải xây dựng lại toàn bộ widget. 
+       StatelessWidget thường được sử dụng cho các thành phần giao diện người dùng đơn giản và không thay đổi, ví dụ như hiển thị các văn bản tĩnh.
+       
+    => StatefulWidget: Là một lớp có khả năng thay đổi trạng thái. StatefulWidget được sử dụng khi bạn cần cập nhật giao diện người dùng dựa trên các thay đổi trong trạng thái của ứng dụng. 
+       StatefulWidget bao gồm hai phần chính là Stateful Widget và State. Widget chính xác là StatelessWidget và nó giữ trạng thái trong lớp State tương ứng. 
+       Khi trạng thái thay đổi, Flutter sẽ gọi phương thức build() để xây dựng lại giao diện người dùng. Các thành phần giao diện người dùng phức tạp hơn, như danh sách cuộn hay biểu đồ tương tác, thường được xây dựng bằng StatefulWidget. 
+
+# TextOverflow
+    1. TextOverflow.clip: Khi văn bản vượt quá không gian hiển thị, nó sẽ bị cắt ngắn mà không có bất kỳ biểu thức nào để chỉ ra rằng nó đã bị cắt đứt.
+    2. TextOverflow.ellipsis: Khi văn bản vượt quá không gian hiển thị, phần cuối của văn bản sẽ được thay thế bằng một dấu chấm ba chấm (...) để biểu thị rằng văn bản đã bị cắt ngắn.
+    3. TextOverflow.fade: Khi văn bản vượt quá không gian hiển thị, phần cuối của văn bản sẽ được làm mờ dần dần cho đến khi không còn hiển thị. 
+    4. TextOverflow.visible: Khi văn bản vượt quá không gian hiển thị, nó sẽ tiếp tục hiển thị ra ngoài không gian đó mà không bị cắt. 
+
+#  ListTile
+    1. leading: Đây là phần tử hiển thị ở bên trái của ListTile. Nó có thể là một hình ảnh (Image), một biểu tượng (Icon), hoặc một nội dung tùy chỉnh.
+    2. title: Đây là phần tử hiển thị ở giữa của ListTile. Nó thường là một đoạn văn bản (Text) để hiển thị tiêu đề của dòng trong danh sách.
+    3. subtitle: Đây là phần tử hiển thị ở phía dưới title của ListTile. Nó cung cấp thông tin phụ hoặc mô tả cho dòng trong danh sách.
+    4. trailing: Đây là phần tử hiển thị ở bên phải của ListTile. Nó thường là một biểu tượng (Icon) hoặc một nút bấm (Button) để thực hiện một hành động liên quan đến dòng trong danh sách.
+    5. contentPadding: Đây là thuộc tính để định dạng khoảng cách giữa nội dung trong ListTile và các biên của nó. Bạn có thể sử dụng EdgeInsets để định dạng nó.
+    6. tileColor: Đây là thuộc tính để định dạng màu nền của ListTile. 
+    7. selectedTileColor: Đây là thuộc tính để định dạng màu nền của ListTile khi nó được chọn.
+    8. enabled: Đây là thuộc tính để xác định liệu ListTile có khả năng tương tác hay không. Khi nó được đặt thành false, ListTile sẽ không phản ứng lại các sự kiện người dùng.
+    9. onTap: Đây là hành động được thực hiện khi người dùng chạm vào ListTile. Bạn có thể gán một hàm xử lý sự kiện vào đây để xử lý hành động chạm.
+    10. onLongPress: Đây là hành động được thực hiện khi người dùng nhấn và giữ ListTile trong một khoảng thời gian dài. 
+
+# AppBar
+    1. leading: Widget hiển thị bên trái của AppBar, thường là một nút hoặc biểu tượng điều hướng.
+    2. automaticallyImplyLeading: Xác định liệu AppBar có tự động hiển thị nút điều hướng mặc định hay không. Giá trị mặc định là true.
+    3. title: Widget tiêu đề của AppBar, thường là một tiêu đề văn bản (Text).
+    4. actions: Danh sách các widget hiển thị bên phải của AppBar, chẳng hạn như các nút hoặc biểu tượng.
+    5. flexibleSpace: Widget linh hoạt được chèn dưới thanh AppBar, như hình ảnh, gradient hoặc các phần tử trang trí khác.
+    6. bottom: Widget hiển thị phía dưới AppBar, thường là một thanh tab (TabBar) hoặc thanh công cụ (Toolbar).
+    7. elevation: Độ bóng đổ của AppBar. Giá trị mặc định là 4.0.
+    8. backgroundColor: Màu nền của AppBar.
+    9. brightness: Độ sáng của AppBar, có thể là Brightness.light (sáng) hoặc Brightness.dark (tối).
+    10. iconTheme: Giao diện biểu tượng (icon) trong AppBar.
+    11. actionsIconTheme: Giao diện biểu tượng (icon) của các action trong AppBar.
+    12. textTheme: Giao diện văn bản trong AppBar.
+    13. centerTitle: Xác định xem tiêu đề của AppBar có được căn giữa không. Giá trị mặc định là false.
+    14. titleSpacing: Khoảng cách giữa tiêu đề và các action trong AppBar.
+    15. toolbarOpacity: Độ mờ của thanh công cụ (Toolbar) trong AppBar, từ 0.0 (mờ nhất) đến 1.0 (rõ nhất).
+    16. bottomOpacity: Độ mờ của thanh phía dưới AppBar, từ 0.0 (mờ nhất) đến 1.0 (rõ nhất).
+    17. shape: Hình dạng của AppBar, ví dụ: hình chữ nhật, hình tròn, hình vuông, vv.
+    18. toolbarHeight: Chiều cao của thanh công cụ (Toolbar) trong AppBar.
+    19. leadingWidth: Chiều rộng của widget leading trong AppBar.
+
+#  Column
+    1. children: Danh sách các widget con của Column, sắp xếp theo chiều dọc.
+    2. mainAxisAlignment: Cách các widget con được căn chỉnh theo chiều dọc. Các giá trị có thể là:
+       MainAxisAlignment.start, (căn chỉnh về phía trên (đầu) của container)
+       MainAxisAlignment.end, (căn chỉnh về phía dưới (cuối) của container)
+       MainAxisAlignment.center, (căn chỉnh theo trung tâm của container)
+       MainAxisAlignment.spaceEvenly, (khoảng cách giữa các widget con được phân bố đều nhau, có khoảng trống đều đặn giữa các widget và ở phía trên và dưới widget đầu và cuối)
+       MainAxisAlignment.spaceBetween, (hoảng cách giữa các widget con được phân bố đều nhau. )
+       MainAxisAlignment.spaceAround (khoảng cách giữa các widget con được phân bố đều nhau,)
+       MainAxisAlignment.spaceEvenly. (khoảng cách giữa các widget con được phân bố đều nhau,)
+    3. crossAxisAlignment: Cách các widget con được căn chỉnh theo chiều ngang. Các giá trị có thể là 
+       CrossAxisAlignment.start, 
+       CrossAxisAlignment.end, 
+       CrossAxisAlignment.center, 
+       CrossAxisAlignment.stretch
+       CrossAxisAlignment.baseline.
+    3. mainAxisSize: Kích thước chính của Column trong chiều dọc. Các giá trị có thể là MainAxisSize.max hoặc MainAxisSize.min.
+    4. verticalDirection: Hướng của chúc năng căn chỉnh và xác định cách các widget con được sắp xếp theo chiều dọc. Các giá trị có thể là VerticalDirection.down hoặc VerticalDirection.up.
+    5. textBaseline: Baseline cho các widget con trong Column khi crossAxisAlignment được đặt thành CrossAxisAlignment.baseline.
+    6. textDirection: Hướng văn bản và căn chỉnh của các widget con trong Column. Các giá trị có thể là TextDirection.ltr hoặc TextDirection.rtl.
+    7. verticalDirection: Hướng của chúc năng căn chỉnh và xác định cách các widget con được sắp xếp theo chiều dọc. Các giá trị có thể là VerticalDirection.down hoặc VerticalDirection.up.
+
+#ListView:
+    1. children: Thuộc tính này là một danh sách các widget con của ListView. Các widget trong danh sách này sẽ được hiển thị theo thứ tự và chiều dọc.
+    2. itemBuilder: Thuộc tính này cho phép bạn xây dựng danh sách các phần tử dựa trên một nguồn dữ liệu. Bạn cần cung cấp một hàm builder để xây dựng widget cho từng phần tử trong danh sách.
+    3. itemCount: Số lượng phần tử trong danh sách. Thuộc tính này cần phải được cung cấp nếu bạn sử dụng itemBuilder.
+    4. scrollDirection: Hướng cuộn của ListView. Các giá trị có thể là Axis.vertical (theo chiều dọc) hoặc Axis.horizontal (theo chiều ngang).
+    5. reverse: Xác định xem danh sách có hiển thị theo thứ tự ngược lại hay không. Giá trị mặc định là false.
+    6. controller: Điều khiển cuộn của ListView. Bạn có thể cung cấp một đối tượng ScrollController để kiểm soát việc cuộn danh sách và lắng nghe các sự kiện cuộn.
+    7. physics: Xác định cách ListView phản ứng với cuộn. Các giá trị có thể là AlwaysScrollableScrollPhysics() (luôn cho phép cuộn), NeverScrollableScrollPhysics() (không cho phép cuộn), BouncingScrollPhysics() (cuộn với hiệu ứng giật lại) hoặc ClampingScrollPhysics() (cuộn với hiệu ứng giới hạn).
+    8. shrinkWrap: Xác định xem ListView có co dãn để phù hợp với nội dung hay không. Giá trị mặc định là false.
+    9. padding: Khoảng cách lề xung quanh ListView.
+    10. semanticChildCount: Số lượng phần tử con mà ListView chứa. Thuộc tính này được sử dụng cho mục đích truy cập ngữ nghĩa và không ảnh hưởng đến hiển thị.
+    11. cacheExtent: Khoảng cách (trong pixel) được dự trữ trước và sau danh sách hiển thị. Điều này giúp tăng hiệu suất cuộn bằng cách dự trữ nội dung.
+    12. itemExtent: Kích thước cố định của mỗi phần tử trong danh sách. Thuộc tính này có thể được sử dụng để tối ưu hóa hiệu suất khi các phần tử có cùng kích thước.
+
+# Container:
+    1. alignment: Điều chỉnh căn chỉnh của các widget con bên trong Container. Các giá trị có thể là:
+       Alignment.topLeft, 
+       Alignment.topCenter, 
+       Alignment.topRight, 
+       Alignment.centerLeft, 
+       Alignment.center, 
+       Alignment.centerRight, 
+       Alignment.bottomLeft, 
+       Alignment.bottomCenter,
+       Alignment.bottomRight.
+    2. padding: Khoảng cách lề xung quanh Container, được xác định bằng cách sử dụng EdgeInsets để chỉ định giá trị của lề từng phía (trên, dưới, trái, phải) hoặc lề đồng nhất cho tất cả các phía.
+    3. color: Màu nền của Container. Bạn có thể sử dụng một đối tượng Color để đặt màu nền cho Container.
+    4. decoration: Điều chỉnh hình dạng và phong cách của Container. Bạn có thể sử dụng một đối tượng BoxDecoration để định nghĩa hình dạng, viền, ảnh nền và các thuộc tính khác cho Container.
+    5. width: Chiều rộng của Container. Bạn có thể đặt giá trị là một số cụ thể hoặc double.infinity để mở rộng Container theo chiều ngang.
+    6. height: Chiều cao của Container. Bạn có thể đặt giá trị là một số cụ thể hoặc double.infinity để mở rộng Container theo chiều dọc.
+    7. constraints: Ràng buộc kích thước của Container. Bạn có thể sử dụng một đối tượng BoxConstraints để đặt giới hạn cho chiều rộng và chiều cao của Container.
+    8. transform: Xác định biến đổi ma trận của Container, cho phép bạn thay đổi vị trí, quay, tỷ lệ hoặc cắt Container.
+    9. margin: Khoảng cách lề xung quanh Container, tương tự như padding. Tuy nhiên, margin được sử dụng để xác định khoảng cách giữa các Container khác nhau trong bố cục.
+    10. child: Widget con của Container, được đặt bên trong và hiển thị trong Container.

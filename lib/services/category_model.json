@@ -1,0 +1,75 @@
+{
+    "categories": [
+        {
+            "name": "Trang phục nữ",
+            "subcategory": [
+                "Tiệc Cưới & Sự Kiện",
+                "Tops & Sets",
+                "Đồng hồ"
+            ]
+        },
+        {
+            "name": "Quần áo & Thời trang nam",
+            "subcategory": [
+                "Quần áo ngoài & Áo khoác",
+                "Trang phục lễ tân",
+                "Phụ kiện"
+            ]
+        },
+        {
+            "name": "Máy tính & Phụ kiện",
+            "subcategory": [
+                "Laptop",
+                "Gmaing PC",
+                "Thiết bị chính thức"
+            ]
+        },
+        {
+            "name": "Ô tô",
+            "subcategory": [
+                "Xe Ô tô",
+                "Xe đạp"
+            ]
+        },
+        {
+            "name": "Trẻ em & Đồ chơi",
+            "subcategory": [
+                "Giày dép & Túi xách",
+                "Quần áo trẻ em",
+                "Đồ chơi cho bé"
+            ]
+        },
+        {
+            "name": "Thể thao",
+            "subcategory": [
+                "Xe đạp",
+                "Giày thể thao",
+                "Đồ bơi"
+            ]
+        },
+        {
+            "name": "Đồ trang sức",
+            "subcategory": [
+                "Dây chuyền",
+                "Vàng",
+                "Bông tai"
+            ]
+        },
+        {
+            "name": "Điện thoại di động & Máy tính bảng",
+            "subcategory": [
+                "Điện thoại thông minh",
+                "Máy tính bảng",
+                "Phụ kiện"
+            ]
+        },
+        {
+            "name": "Đồ nội thất",
+            "subcategory": [
+                "Ghế Sofa",
+                "Giường",
+                "Rèm cửa"
+            ]
+        }
+    ]
+}

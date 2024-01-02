@@ -1,0 +1,20 @@
+Quy Tắc Đặt Tên
+    Quy tắc Camel Case: (thường được sử dụng để đặt tên các biến, phương thức, lớp và các thành phần khác trong mã nguồn)
+        Các từ trong tên package được viết liền nhau, mỗi từ bắt đầu bằng chữ cái viết hoa (trừ từ đầu tiên).
+        Ví dụ:
+              Tên biến: myVariable, firstName, totalAmount
+              Tên phương thức: getUserInfo(), calculateTotal(), setFirstName()
+              Tên lớp: MyClass, UserModel, PaymentService
+
+    Quy tắc đặt tên ngược (reverse domain name): (thường được áp dụng cho việc đặt tên package, để đảm bảo tính duy nhất và tổ chức của các package trong dự án.)
+        Tên package bắt đầu bằng phần tên miền của công ty hoặc tổ chức, được đảo ngược.
+        Viết thường
+        Các thành phần tiếp theo của tên package được phân tách bằng dấu chấm (.) để tạo thành cấu trúc ngược.
+        Ví dụ: com.example.zing.local.
+
+# Lambda function:
+    => Còn được gọi là hàm nặc danh (anonymous function) hoặc hàm vô danh (unnamed function), là một hàm không có tên và không được khai báo theo cách thông thường. 
+       Thay vì định nghĩa hàm bằng từ khóa function và đặt tên cho nó, lambda function được viết ngắn gọn và trực tiếp trong các biểu thức hoặc tham số của các phương thức khác.
+       
+    => Lambda function thường được sử dụng trong các ngôn ngữ lập trình hỗ trợ lập trình hàm (functional programming) như Python, JavaScript, Ruby, và nhiều ngôn ngữ khác. 
+       Chúng cung cấp một cách thuận tiện để định nghĩa và sử dụng các hàm nhỏ, đơn giản mà không cần phải khai báo riêng biệt.
